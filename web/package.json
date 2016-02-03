@@ -1,0 +1,35 @@
+{
+  "name": "UnstableExperiment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+
+    "keywords": [
+      "angularjs",
+      "angular-route",
+      "bootstrap",
+      "http-server",
+      "jquery",
+      "directives",
+      "webcomponent"
+    ],
+
+    "repository" : {
+    "type" : "git",
+    "url" : ""
+    },
+
+    "dependencies": {
+      "jquery": "2.1.x",
+      "http-server": "*",
+      "angular": "1.4.x",
+      "angular-route": "1.4.x",
+      "bootstrap": "3.3.x"
+    },
+
+    "scripts": {
+      "start": "http-server -a localhost -p 8002 -c-1"
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>My AngularApp</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+
+    <!-- Angular Controllers -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/controllers/loginController.js"></script>
+    <script type="text/javascript" src="js/controllers/logoutController.js"></script>
+    <script type="text/javascript" src="js/controllers/startController.js"></script>
+    <script type="text/javascript" src="js/controllers/qualificationsController.js"></script>
+
+    <!-- Angular Directives -->
+
+    <!-- Angular Services -->
+    <script type="text/javascript" src="js/services/authenticationService.js"></script>
+
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body ng-app="WebAppIncruit">
+    <div ng-view></div>
+</body>
+
+</html>
