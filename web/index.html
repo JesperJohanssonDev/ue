@@ -29,15 +29,13 @@
     <!-- Angular Services -->
     <script type="text/javascript" src="js/services/authenticationService.js"></script>
 
-
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/main.css">
 
-
 </head>
-
-<body ng-app="WebAppIncruit">
-    <div ng-view></div>
-</body>
-
+    <div ng-include="'templates/navbar.html'"></div>
+    <body ng-app="WebAppIncruit">
+        <div ng-view>
+        </div>
+    </body>
 </html>

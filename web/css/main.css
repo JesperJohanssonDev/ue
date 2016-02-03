@@ -1,3 +1,6 @@
-.navbar {
-    min-height: 120px !important;
+body {
+    background-image: url("../resources/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }

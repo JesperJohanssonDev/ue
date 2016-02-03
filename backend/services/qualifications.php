@@ -6,7 +6,7 @@
     $token = $data->token;
 
     $check = $db->prepare("SELECT qualifications.id as qualificationID, qualifications.quality as quality
-                            FROM qualifications, users WHERE users.token=$token AND users.id=qualifications.userID");
+                            FROM qualifications, users");
     $check->execute();
     $check = $check->fetchAll(PDO::FETCH_ASSOC);
 
