@@ -1,0 +1,58 @@
+<br>
+<button type="button" class="btn btn-primary" ng-click="showme=false">Create a user</button> <button type="button" class="btn btn-primary" ng-click="showme=true">Apply to guild</button>
+
+<div class="wrapper">
+    <div ng-show="showme">Application</div>
+    
+    <div ng-hide="showme">     
+        <div class="container-fluid">
+            <h2>Create a user</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="pwd">Fullname:</label>
+                            <input type="text" class="form-control" id="fullname" ng-model="regUser.fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" ng-model="regUser.email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Username:</label>
+                            <input type="text" class="form-control" id="username" ng-model="regUser.username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="password" ng-model="regUser.password" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Main char name:</label>
+                            <input type="text" class="form-control" id="mainchar" ng-model="regUser.mainchar">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Armory link:</label>
+                            <input type="text" class="form-control" id="armorylink" ng-model="regUser.armorylink">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Unstable Experiment code:</label>
+                            <input type="text" class="form-control" id="uecode" ng-model="regUser.uecode">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create user</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <b>Create a user without applying to the guild</b><br><br>
+                    - You will be granted access to our general forums<br>
+                    - If you apply in the future you can use the same username<br><br>
+                    - Member of Unstable already? Make your user here! <br><br>
+                    
+                    <img src="../resources/images/horde_logo.png" width="256px" height="256px">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

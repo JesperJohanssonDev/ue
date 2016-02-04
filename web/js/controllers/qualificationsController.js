@@ -1,4 +1,4 @@
-WebAppIncruit.controller("QualificationsController",
+UEWeb.controller("QualificationsController",
     function($scope, $http, AuthenticationService) {
 
         var token;

@@ -1,4 +1,4 @@
-WebAppIncruit.service('AuthenticationService', ["$http", "$location",
+UEWeb.service('AuthenticationService', ["$http", "$location",
     function($http, $location){
 
         var self = this;

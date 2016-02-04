@@ -22,6 +22,9 @@
     <script type="text/javascript" src="js/controllers/loginController.js"></script>
     <script type="text/javascript" src="js/controllers/logoutController.js"></script>
     <script type="text/javascript" src="js/controllers/startController.js"></script>
+    <script type="text/javascript" src="js/controllers/applyController.js"></script>
+    <script type="text/javascript" src="js/controllers/contactController.js"></script>
+    <script type="text/javascript" src="js/controllers/recruitmentController.js"></script>
     <script type="text/javascript" src="js/controllers/qualificationsController.js"></script>
 
     <!-- Angular Directives -->
@@ -33,9 +36,15 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 
 </head>
-    <div ng-include="'templates/navbar.html'"></div>
-    <body ng-app="WebAppIncruit">
-        <div ng-view>
+    <body ng-app="UEWeb">
+        <div ng-include="'templates/navbar.html'"></div>
+        <div class="container-fluid" style="margin-top: 350px; background-color: #222; border-top: 1px solid #080808; color: #FFF; min-height: 960px;">
+            <div class="row">
+                <div class="col-md-8" style="border-right: 1px solid #080808; min-height: 960px;">
+                    <div ng-view></div>
+                </div>
+                <div class="col-md-4">.col-xs-6 .col-md-4</div>
+            </div>
         </div>
     </body>
 </html>

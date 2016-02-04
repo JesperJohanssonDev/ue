@@ -1,4 +1,4 @@
-WebAppIncruit.controller("LogoutController",
+UEWeb.controller("LogoutController",
     function ($scope, $http, $location, AuthenticationService){
 
         //If user is not logged in

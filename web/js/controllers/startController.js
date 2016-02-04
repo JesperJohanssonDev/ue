@@ -1,4 +1,4 @@
-WebAppIncruit.controller("StartController",
+UEWeb.controller("StartController",
     function ($scope) {
 
 });

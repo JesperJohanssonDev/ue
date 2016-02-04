@@ -1,4 +1,4 @@
-WebAppIncruit.controller("LoginController",
+UEWeb.controller("LoginController",
     function($scope, $http, $location) {
 
         $scope.loginInfo = {
