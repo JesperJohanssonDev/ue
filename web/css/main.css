@@ -4,3 +4,33 @@ body {
     background-position: right top;
     background-attachment: fixed;
 }
+
+.lowDemand {
+    color: rgba(204, 0, 0, 1);
+    display:inline;
+}
+
+.medDemand {
+    color: rgba(204, 204, 0, 1);
+    display:inline;
+}
+
+.higDemand {
+    color: rgba(0, 155, 0, 1);
+    display:inline;
+}
+
+.lowFade {
+    opacity: 0.20;
+    display:inline;
+}
+
+.medFade {
+    opacity: 0.60;
+    display:inline;
+}
+
+.higFade {
+    opacity: 1;
+    display:inline;
+}
