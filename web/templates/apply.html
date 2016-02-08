@@ -2,7 +2,98 @@
 <button type="button" class="btn btn-primary" ng-click="showme=false">Create a user</button> <button type="button" class="btn btn-primary" ng-click="showme=true">Apply to guild</button>
 
 <div class="wrapper">
-    <div ng-show="showme">Application</div>
+    <div ng-show="showme">
+        <div class="container-fluid">
+            <h2>Apply to guild</h2>
+            <a href="#">Read this before you apply</a> <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <form role="form">
+                        
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" ng-model="appUser.name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="text" class="form-control" id="age" ng-model="appUser.age" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="battletag">BattleTag:</label>
+                            <input type="text" class="form-control" id="battletag" ng-model="appUser.battletag" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email: (we'll use this to get back to you)</label>
+                            <input type="email" class="form-control" id="email" ng-model="appUser.email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="from">From:</label>
+                            <input type="text" class="form-control" id="from" ng-model="appUser.from" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" class="form-control" id="occupation" ng-model="appUser.occupation" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input type="text" class="form-control" id="wowclass" ng-model="appUser.class" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="specc">Specc</label>
+                            <input type="text" class="form-control" id="specc" ng-model="appUser.specc" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="armory">Amory Link</label>
+                            <input type="text" class="form-control" id="amory" ng-model="appUser.armory" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="screenshot">Link to a Screenshot of your UI (you can upload one at imgur):</label>
+                            <input type="screenshot" class="form-control" id="screenshot" ng-model="appUser.screenshot" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="WorldofLogs">World of Logs:</label>
+                            <textarea class="form-control" rows="5" id="worldoflogs" ng-model="appUser.wol"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="raidhistory">Tell us about your WoW Raiding history:</label>
+                            <textarea class="form-control" rows="8" id="raidhistory" ng-model="appUser.raidhistory"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="alts">Are you able to have alts up to date with levling and gear to min-max our raiding for each boss?:</label>
+                            <textarea class="form-control" rows="3" id="alts" ng-model="appUser.alts"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goals">Are you able to commit to our goals?:</label>
+                            <textarea class="form-control" rows="3" id="goals" ng-model="appUser.goals"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="anythingelse">Anything else?:</label>
+                            <textarea class="form-control" rows="3" id="anythingelse" ng-model="appUser.anythingelse"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send my application</button>
+                        
+                        <br><br>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div ng-hide="showme">     
         <div class="container-fluid">
@@ -11,7 +102,7 @@
                 <div class="col-md-7">
                     <form role="form">
                         <div class="form-group">
-                            <label for="pwd">Fullname:</label>
+                            <label for="fullname">Fullname:</label>
                             <input type="text" class="form-control" id="fullname" ng-model="regUser.fullname" required>
                         </div>
                         <div class="form-group">
@@ -19,25 +110,25 @@
                             <input type="email" class="form-control" id="email" ng-model="regUser.email" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Username:</label>
+                            <label for="username">Username:</label>
                             <input type="text" class="form-control" id="username" ng-model="regUser.username" required>
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Password:</label>
+                            <label for="password">Password:</label>
                             <input type="password" class="form-control" id="password" ng-model="regUser.password" required>
                         </div>
                         <br>
                         <div class="form-group">
-                            <label for="email">Main char name:</label>
+                            <label for="mainchar">Main char name:</label>
                             <input type="text" class="form-control" id="mainchar" ng-model="regUser.mainchar">
                         </div>
                         <div class="form-group">
-                            <label for="email">Armory link:</label>
+                            <label for="armorylink">Armory link:</label>
                             <input type="text" class="form-control" id="armorylink" ng-model="regUser.armorylink">
                         </div>
                         <br>
                         <div class="form-group">
-                            <label for="email">Unstable Experiment code:</label>
+                            <label for="uepassword">Unstable Experiment code:</label>
                             <input type="text" class="form-control" id="uecode" ng-model="regUser.uecode">
                         </div>
                         <button type="submit" class="btn btn-primary">Create user</button>
